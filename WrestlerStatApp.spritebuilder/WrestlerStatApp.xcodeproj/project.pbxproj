@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		051AACEC1A4B3EF8000ED851 /* Moves.m in Sources */ = {isa = PBXBuildFile; fileRef = 051AACEB1A4B3EF8000ED851 /* Moves.m */; };
 		5B1210061974825D004C1E1D /* libcocos2dAndroid.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B121001197481CE004C1E1D /* libcocos2dAndroid.a */; };
 		5B12100C19748281004C1E1D /* BridgeKitV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B12100B19748281004C1E1D /* BridgeKitV3.framework */; };
 		5B121029197484DA004C1E1D /* BridgeKitV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B12100B19748281004C1E1D /* BridgeKitV3.framework */; };
@@ -123,6 +124,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		051AACEA1A4B3EF8000ED851 /* Moves.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Moves.h; sourceTree = "<group>"; };
+		051AACEB1A4B3EF8000ED851 /* Moves.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Moves.m; sourceTree = "<group>"; };
 		5B12100919748273004C1E1D /* libEGL.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libEGL.so; path = /usr/lib/armv7a/libEGL.so; sourceTree = SDKROOT; };
 		5B12100B19748281004C1E1D /* BridgeKitV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BridgeKitV3.framework; path = System/Library/Frameworks/BridgeKitV3.framework; sourceTree = SDKROOT; };
 		5B12100F197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
@@ -311,6 +314,8 @@
 				5B12102F197484FA004C1E1D /* WrestlerStatAppActivity.m */,
 				B7378992180767190076A88C /* MainScene.h */,
 				B7378993180767190076A88C /* MainScene.m */,
+				051AACEA1A4B3EF8000ED851 /* Moves.h */,
+				051AACEB1A4B3EF8000ED851 /* Moves.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -640,6 +645,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				051AACEC1A4B3EF8000ED851 /* Moves.m in Sources */,
 				B7378994180767190076A88C /* MainScene.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 				5B121038197487F2004C1E1D /* AppDelegate.m in Sources */,

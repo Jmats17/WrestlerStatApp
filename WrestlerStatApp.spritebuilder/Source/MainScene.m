@@ -9,5 +9,19 @@
 #import "MainScene.h"
 
 @implementation MainScene
+{
+    CCButton *thing;
+
+}
+
+-(void)thing
+
+{
+
+    CCScene *Moves = [CCBReader loadAsScene:@"Moves"];
+    [[CCDirector sharedDirector] replaceScene:Moves];
+
+}
+
 
 @end
