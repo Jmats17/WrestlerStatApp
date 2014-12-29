@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		051AACEC1A4B3EF8000ED851 /* Moves.m in Sources */ = {isa = PBXBuildFile; fileRef = 051AACEB1A4B3EF8000ED851 /* Moves.m */; };
 		5B1210061974825D004C1E1D /* libcocos2dAndroid.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B121001197481CE004C1E1D /* libcocos2dAndroid.a */; };
 		5B12100C19748281004C1E1D /* BridgeKitV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B12100B19748281004C1E1D /* BridgeKitV3.framework */; };
 		5B121029197484DA004C1E1D /* BridgeKitV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B12100B19748281004C1E1D /* BridgeKitV3.framework */; };
@@ -62,6 +61,24 @@
 		B77F1B4017B978D7009739AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3F17B978D7009739AE /* CoreGraphics.framework */; };
 		B77F1B4217B978D7009739AE /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B4117B978D7009739AE /* CoreText.framework */; };
 		B78A0B10198AF87200C63841 /* Published-Android in Resources */ = {isa = PBXBuildFile; fileRef = B78A0B0F198AF87200C63841 /* Published-Android */; };
+		D03118881A51001C001A745C /* MovesBK.m in Sources */ = {isa = PBXBuildFile; fileRef = D03118871A51001C001A745C /* MovesBK.m */; };
+		D031188B1A51018C001A745C /* MovesBR.m in Sources */ = {isa = PBXBuildFile; fileRef = D031188A1A51018C001A745C /* MovesBR.m */; };
+		D031188E1A5101A8001A745C /* MovesCP.m in Sources */ = {isa = PBXBuildFile; fileRef = D031188D1A5101A8001A745C /* MovesCP.m */; };
+		D03118911A5101B3001A745C /* MovesDS.m in Sources */ = {isa = PBXBuildFile; fileRef = D03118901A5101B3001A745C /* MovesDS.m */; };
+		D03118941A5101C8001A745C /* MovesIK.m in Sources */ = {isa = PBXBuildFile; fileRef = D03118931A5101C8001A745C /* MovesIK.m */; };
+		D03118971A5101D7001A745C /* MovesJB.m in Sources */ = {isa = PBXBuildFile; fileRef = D03118961A5101D7001A745C /* MovesJB.m */; };
+		D031189A1A5101E3001A745C /* MovesJD.m in Sources */ = {isa = PBXBuildFile; fileRef = D03118991A5101E3001A745C /* MovesJD.m */; };
+		D031189D1A5101F0001A745C /* MovesJL.m in Sources */ = {isa = PBXBuildFile; fileRef = D031189C1A5101F0001A745C /* MovesJL.m */; };
+		D03118A01A510203001A745C /* MovesKB.m in Sources */ = {isa = PBXBuildFile; fileRef = D031189F1A510203001A745C /* MovesKB.m */; };
+		D03118A31A51020F001A745C /* MovesLM.m in Sources */ = {isa = PBXBuildFile; fileRef = D03118A21A51020F001A745C /* MovesLM.m */; };
+		D03118A61A51021E001A745C /* MovesMM.m in Sources */ = {isa = PBXBuildFile; fileRef = D03118A51A51021E001A745C /* MovesMM.m */; };
+		D03118A91A51022A001A745C /* MovesRF.m in Sources */ = {isa = PBXBuildFile; fileRef = D03118A81A51022A001A745C /* MovesRF.m */; };
+		D03118AC1A510235001A745C /* MovesRP.m in Sources */ = {isa = PBXBuildFile; fileRef = D03118AB1A510235001A745C /* MovesRP.m */; };
+		D03118AF1A510241001A745C /* MovesSF.m in Sources */ = {isa = PBXBuildFile; fileRef = D03118AE1A510241001A745C /* MovesSF.m */; };
+		D03118B21A510256001A745C /* MovesSM.m in Sources */ = {isa = PBXBuildFile; fileRef = D03118B11A510256001A745C /* MovesSM.m */; };
+		D03118B51A510265001A745C /* MovesTN.m in Sources */ = {isa = PBXBuildFile; fileRef = D03118B41A510265001A745C /* MovesTN.m */; };
+		D03118B81A510272001A745C /* MovesTrN.m in Sources */ = {isa = PBXBuildFile; fileRef = D03118B71A510272001A745C /* MovesTrN.m */; };
+		D03118BB1A51027E001A745C /* MovesZT.m in Sources */ = {isa = PBXBuildFile; fileRef = D03118BA1A51027E001A745C /* MovesZT.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,8 +141,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		051AACEA1A4B3EF8000ED851 /* Moves.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Moves.h; sourceTree = "<group>"; };
-		051AACEB1A4B3EF8000ED851 /* Moves.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Moves.m; sourceTree = "<group>"; };
 		5B12100919748273004C1E1D /* libEGL.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libEGL.so; path = /usr/lib/armv7a/libEGL.so; sourceTree = SDKROOT; };
 		5B12100B19748281004C1E1D /* BridgeKitV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BridgeKitV3.framework; path = System/Library/Frameworks/BridgeKitV3.framework; sourceTree = SDKROOT; };
 		5B12100F197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
@@ -175,6 +190,42 @@
 		B77F1B4117B978D7009739AE /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		B78A0B0F198AF87200C63841 /* Published-Android */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Published-Android"; sourceTree = "<group>"; };
 		B7B3713D180358F1007369CC /* libObjectiveChipmunk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libObjectiveChipmunk.a; path = "../libs/cocos2d-iphone/external/Chipmunk/xcode/build/Debug-iphoneos/libObjectiveChipmunk.a"; sourceTree = "<group>"; };
+		D03118861A51001C001A745C /* MovesBK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovesBK.h; sourceTree = "<group>"; };
+		D03118871A51001C001A745C /* MovesBK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovesBK.m; sourceTree = "<group>"; };
+		D03118891A51018C001A745C /* MovesBR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovesBR.h; sourceTree = "<group>"; };
+		D031188A1A51018C001A745C /* MovesBR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovesBR.m; sourceTree = "<group>"; };
+		D031188C1A5101A8001A745C /* MovesCP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovesCP.h; sourceTree = "<group>"; };
+		D031188D1A5101A8001A745C /* MovesCP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovesCP.m; sourceTree = "<group>"; };
+		D031188F1A5101B3001A745C /* MovesDS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovesDS.h; sourceTree = "<group>"; };
+		D03118901A5101B3001A745C /* MovesDS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovesDS.m; sourceTree = "<group>"; };
+		D03118921A5101C8001A745C /* MovesIK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovesIK.h; sourceTree = "<group>"; };
+		D03118931A5101C8001A745C /* MovesIK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovesIK.m; sourceTree = "<group>"; };
+		D03118951A5101D7001A745C /* MovesJB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovesJB.h; sourceTree = "<group>"; };
+		D03118961A5101D7001A745C /* MovesJB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovesJB.m; sourceTree = "<group>"; };
+		D03118981A5101E3001A745C /* MovesJD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovesJD.h; sourceTree = "<group>"; };
+		D03118991A5101E3001A745C /* MovesJD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovesJD.m; sourceTree = "<group>"; };
+		D031189B1A5101F0001A745C /* MovesJL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovesJL.h; sourceTree = "<group>"; };
+		D031189C1A5101F0001A745C /* MovesJL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovesJL.m; sourceTree = "<group>"; };
+		D031189E1A510203001A745C /* MovesKB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovesKB.h; sourceTree = "<group>"; };
+		D031189F1A510203001A745C /* MovesKB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovesKB.m; sourceTree = "<group>"; };
+		D03118A11A51020F001A745C /* MovesLM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovesLM.h; sourceTree = "<group>"; };
+		D03118A21A51020F001A745C /* MovesLM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovesLM.m; sourceTree = "<group>"; };
+		D03118A41A51021E001A745C /* MovesMM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovesMM.h; sourceTree = "<group>"; };
+		D03118A51A51021E001A745C /* MovesMM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovesMM.m; sourceTree = "<group>"; };
+		D03118A71A51022A001A745C /* MovesRF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovesRF.h; sourceTree = "<group>"; };
+		D03118A81A51022A001A745C /* MovesRF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovesRF.m; sourceTree = "<group>"; };
+		D03118AA1A510235001A745C /* MovesRP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovesRP.h; sourceTree = "<group>"; };
+		D03118AB1A510235001A745C /* MovesRP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovesRP.m; sourceTree = "<group>"; };
+		D03118AD1A510241001A745C /* MovesSF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovesSF.h; sourceTree = "<group>"; };
+		D03118AE1A510241001A745C /* MovesSF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovesSF.m; sourceTree = "<group>"; };
+		D03118B01A510256001A745C /* MovesSM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovesSM.h; sourceTree = "<group>"; };
+		D03118B11A510256001A745C /* MovesSM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovesSM.m; sourceTree = "<group>"; };
+		D03118B31A510265001A745C /* MovesTN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovesTN.h; sourceTree = "<group>"; };
+		D03118B41A510265001A745C /* MovesTN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovesTN.m; sourceTree = "<group>"; };
+		D03118B61A510272001A745C /* MovesTrN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovesTrN.h; sourceTree = "<group>"; };
+		D03118B71A510272001A745C /* MovesTrN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovesTrN.m; sourceTree = "<group>"; };
+		D03118B91A51027E001A745C /* MovesZT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovesZT.h; sourceTree = "<group>"; };
+		D03118BA1A51027E001A745C /* MovesZT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovesZT.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -314,8 +365,42 @@
 				5B12102F197484FA004C1E1D /* WrestlerStatAppActivity.m */,
 				B7378992180767190076A88C /* MainScene.h */,
 				B7378993180767190076A88C /* MainScene.m */,
-				051AACEA1A4B3EF8000ED851 /* Moves.h */,
-				051AACEB1A4B3EF8000ED851 /* Moves.m */,
+				D03118861A51001C001A745C /* MovesBK.h */,
+				D03118871A51001C001A745C /* MovesBK.m */,
+				D03118891A51018C001A745C /* MovesBR.h */,
+				D031188A1A51018C001A745C /* MovesBR.m */,
+				D031188C1A5101A8001A745C /* MovesCP.h */,
+				D031188D1A5101A8001A745C /* MovesCP.m */,
+				D031188F1A5101B3001A745C /* MovesDS.h */,
+				D03118901A5101B3001A745C /* MovesDS.m */,
+				D03118921A5101C8001A745C /* MovesIK.h */,
+				D03118931A5101C8001A745C /* MovesIK.m */,
+				D03118951A5101D7001A745C /* MovesJB.h */,
+				D03118961A5101D7001A745C /* MovesJB.m */,
+				D03118981A5101E3001A745C /* MovesJD.h */,
+				D03118991A5101E3001A745C /* MovesJD.m */,
+				D031189B1A5101F0001A745C /* MovesJL.h */,
+				D031189C1A5101F0001A745C /* MovesJL.m */,
+				D031189E1A510203001A745C /* MovesKB.h */,
+				D031189F1A510203001A745C /* MovesKB.m */,
+				D03118A11A51020F001A745C /* MovesLM.h */,
+				D03118A21A51020F001A745C /* MovesLM.m */,
+				D03118A41A51021E001A745C /* MovesMM.h */,
+				D03118A51A51021E001A745C /* MovesMM.m */,
+				D03118A71A51022A001A745C /* MovesRF.h */,
+				D03118A81A51022A001A745C /* MovesRF.m */,
+				D03118AA1A510235001A745C /* MovesRP.h */,
+				D03118AB1A510235001A745C /* MovesRP.m */,
+				D03118AD1A510241001A745C /* MovesSF.h */,
+				D03118AE1A510241001A745C /* MovesSF.m */,
+				D03118B01A510256001A745C /* MovesSM.h */,
+				D03118B11A510256001A745C /* MovesSM.m */,
+				D03118B31A510265001A745C /* MovesTN.h */,
+				D03118B41A510265001A745C /* MovesTN.m */,
+				D03118B61A510272001A745C /* MovesTrN.h */,
+				D03118B71A510272001A745C /* MovesTrN.m */,
+				D03118B91A51027E001A745C /* MovesZT.h */,
+				D03118BA1A51027E001A745C /* MovesZT.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -645,10 +730,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				051AACEC1A4B3EF8000ED851 /* Moves.m in Sources */,
+				D03118B21A510256001A745C /* MovesSM.m in Sources */,
+				D03118AC1A510235001A745C /* MovesRP.m in Sources */,
+				D03118971A5101D7001A745C /* MovesJB.m in Sources */,
 				B7378994180767190076A88C /* MainScene.m in Sources */,
+				D03118A61A51021E001A745C /* MovesMM.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
+				D03118A01A510203001A745C /* MovesKB.m in Sources */,
+				D03118941A5101C8001A745C /* MovesIK.m in Sources */,
 				5B121038197487F2004C1E1D /* AppDelegate.m in Sources */,
+				D031188E1A5101A8001A745C /* MovesCP.m in Sources */,
+				D03118881A51001C001A745C /* MovesBK.m in Sources */,
+				D03118B51A510265001A745C /* MovesTN.m in Sources */,
+				D03118A91A51022A001A745C /* MovesRF.m in Sources */,
+				D03118911A5101B3001A745C /* MovesDS.m in Sources */,
+				D031189A1A5101E3001A745C /* MovesJD.m in Sources */,
+				D03118B81A510272001A745C /* MovesTrN.m in Sources */,
+				D031188B1A51018C001A745C /* MovesBR.m in Sources */,
+				D03118AF1A510241001A745C /* MovesSF.m in Sources */,
+				D03118BB1A51027E001A745C /* MovesZT.m in Sources */,
+				D031189D1A5101F0001A745C /* MovesJL.m in Sources */,
+				D03118A31A51020F001A745C /* MovesLM.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
