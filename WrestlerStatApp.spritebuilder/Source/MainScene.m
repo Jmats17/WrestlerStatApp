@@ -27,7 +27,7 @@
 
 {
     
-    CCScene *MovesBR = [CCBReader loadAsScene:@"MovesBR"];
+    CCScene *MovesBR = [CCBReader loadAsScene:@"MoveBR"];
     [[CCDirector sharedDirector] replaceScene:MovesBR];
     NSLog(@"hey");
     
