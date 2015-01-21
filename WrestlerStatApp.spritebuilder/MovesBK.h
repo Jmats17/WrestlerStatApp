@@ -9,5 +9,7 @@
 #import "CCScene.h"
 
 @interface MovesBK : CCScene
-
+{
+    
+}
 @end

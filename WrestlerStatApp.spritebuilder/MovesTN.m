@@ -48,9 +48,90 @@
     
     UISwipeGestureRecognizer *_swipeRight;
     UISwipeGestureRecognizer *_swipeUp;
-
+    NSString *label;
+    
+    NSUserDefaults *defaults;
+    NSNumber *correctNS;
+    NSNumber *totalNS;
+    NSNumber *percentNS;
+    
+    NSNumber *correctNS2;
+    NSNumber *totalNS2;
+    NSNumber *percentNS2;
+    
+    
+    NSNumber *correctNS3;
+    NSNumber *totalNS3;
+    NSNumber *percentNS3;
+    
+    
+    NSNumber *correctNS4;
+    NSNumber *totalNS4;
+    NSNumber *percentNS4;
+    
+    
+    NSNumber *correctNS5;
+    NSNumber *totalNS5;
+    NSNumber *percentNS5;
+    
 }
 
+-(void)onEnter {
+    [super onEnter];
+    defaults = [NSUserDefaults standardUserDefaults];
+    totalNS = [defaults objectForKey:@"TN-total"];
+    correctNS = [defaults objectForKey:@"TN-correct"];
+    percentNS = [defaults objectForKey:@"TN-percent"];
+    total = [totalNS floatValue];
+    correct = [correctNS floatValue];
+    percentTotal = [percentNS floatValue];
+    _correct.string = [NSString stringWithFormat:@"%.0f", correct];
+    _total.string = [NSString stringWithFormat:@"%.0f", total];
+    _percent.string = [NSString stringWithFormat:@"Success Rate: %.0f %%",percentTotal];
+    
+    totalNS2 = [defaults objectForKey:@"TN-total2"];
+    correctNS2 = [defaults objectForKey:@"TN-correct2"];
+    percentNS2 = [defaults objectForKey:@"TN-percent2"];
+    total2 = [totalNS2 floatValue];
+    correct2 = [correctNS2 floatValue];
+    percentTotal2 = [percentNS2 floatValue];
+    _correct2.string = [NSString stringWithFormat:@"%.0f", correct2];
+    _total2.string = [NSString stringWithFormat:@"%.0f", total2];
+    _percent2.string = [NSString stringWithFormat:@"Success Rate: %.0f %%",percentTotal2];
+    
+    totalNS3 = [defaults objectForKey:@"TN-total3"];
+    correctNS3 = [defaults objectForKey:@"TN-correct3"];
+    percentNS3 = [defaults objectForKey:@"TN-percent3"];
+    total3 = [totalNS3 floatValue];
+    correct3 = [correctNS3 floatValue];
+    percentTotal3 = [percentNS3 floatValue];
+    _correct3.string = [NSString stringWithFormat:@"%.0f", correct3];
+    _total3.string = [NSString stringWithFormat:@"%.0f", total3];
+    _percent3.string = [NSString stringWithFormat:@"Success Rate: %.0f %%",percentTotal3];
+    
+    totalNS4 = [defaults objectForKey:@"TN-total4"];
+    correctNS4 = [defaults objectForKey:@"TN-correct4"];
+    percentNS4 = [defaults objectForKey:@"TN-percent4"];
+    total4 = [totalNS4 floatValue];
+    correct4 = [correctNS4 floatValue];
+    percentTotal4 = [percentNS4 floatValue];
+    _correct4.string = [NSString stringWithFormat:@"%.0f", correct4];
+    _total4.string = [NSString stringWithFormat:@"%.0f", total4];
+    _percent4.string = [NSString stringWithFormat:@"Success Rate: %.0f %%",percentTotal4];
+    
+    totalNS5 = [defaults objectForKey:@"TN-total5"];
+    correctNS5 = [defaults objectForKey:@"TN-correct5"];
+    percentNS5 = [defaults objectForKey:@"TN-percent5"];
+    total5 = [totalNS5 floatValue];
+    correct5 = [correctNS5 floatValue];
+    percentTotal5 = [percentNS5 floatValue];
+    _correct5.string = [NSString stringWithFormat:@"%.0f", correct5];
+    _total5.string = [NSString stringWithFormat:@"%.0f", total5];
+    _percent5.string = [NSString stringWithFormat:@"Success Rate: %.0f %%",percentTotal5];
+    
+    
+    
+}
 
 -(void) didLoadFromCCB {
     _swipeRight = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipeRight)];
@@ -61,8 +142,11 @@
     [_swipeUp setDirection:UISwipeGestureRecognizerDirectionUp];
     [[[CCDirector sharedDirector]view]addGestureRecognizer:_swipeUp];
     
-
+    
+    
 }
+
+
 
 -(void)swipeRight
 
@@ -70,61 +154,103 @@
     
     CCScene *back = [CCBReader loadAsScene:@"MainScene"];
     [[CCDirector sharedDirector] replaceScene:back];
+    CCTransition *transition = [CCTransition transitionRevealWithDirection:CCTransitionDirectionRight duration: .3f];
+    [[CCDirector sharedDirector] replaceScene:back withTransition:transition];
     
 }
+
+
+-(void) showValues {
+    _correct.string = [NSString stringWithFormat:@"%.0f", correct];
+    _total.string = [NSString stringWithFormat:@"%.0f", total];
+    _percent.string = [NSString stringWithFormat:@"Success Rate: %.0f %%", percentTotal];
+    _correct2.string = [NSString stringWithFormat:@"%.0f", correct2];
+    _total2.string = [NSString stringWithFormat:@"%.0f", total2];
+    _percent2.string = [NSString stringWithFormat:@"Success Rate: %.0f %%", percentTotal2];
+    _correct3.string = [NSString stringWithFormat:@"%.0f", correct3];
+    _total3.string = [NSString stringWithFormat:@"%.0f", total3];
+    _percent3.string = [NSString stringWithFormat:@"Success Rate: %.0f %%", percentTotal3];
+    _correct4.string = [NSString stringWithFormat:@"%.0f", correct4];
+    _total4.string = [NSString stringWithFormat:@"%.0f", total4];
+    _percent4.string = [NSString stringWithFormat:@"Success Rate: %.0f %%", percentTotal4];
+    _correct5.string = [NSString stringWithFormat:@"%.0f", correct5];
+    _total5.string = [NSString stringWithFormat:@"%.0f", total5];
+    _percent5.string = [NSString stringWithFormat:@"Success Rate: %.0f %%", percentTotal5];
+}
+
+-(void) saveValues {
+    totalNS = [NSNumber numberWithFloat:total];
+    correctNS = [NSNumber numberWithFloat:correct];
+    percentNS = [NSNumber numberWithFloat:percentTotal];
+    [defaults setObject:totalNS forKey:@"TN-total"];
+    [defaults setObject:correctNS forKey:@"TN-correct"];
+    [defaults setObject:percentNS forKey:@"TN-percent"];
+    [defaults synchronize];
+    
+    totalNS2 = [NSNumber numberWithFloat:total2];
+    correctNS2 = [NSNumber numberWithFloat:correct2];
+    percentNS2 = [NSNumber numberWithFloat:percentTotal2];
+    [defaults setObject:totalNS2 forKey:@"TN-total2"];
+    [defaults setObject:correctNS2 forKey:@"TN-correct2"];
+    [defaults setObject:percentNS2 forKey:@"TN-percent2"];
+    [defaults synchronize];
+    
+    totalNS3 = [NSNumber numberWithFloat:total3];
+    correctNS3 = [NSNumber numberWithFloat:correct3];
+    percentNS3 = [NSNumber numberWithFloat:percentTotal3];
+    [defaults setObject:totalNS3 forKey:@"TN-total3"];
+    [defaults setObject:correctNS3 forKey:@"TN-correct3"];
+    [defaults setObject:percentNS3 forKey:@"TN-percent3"];
+    [defaults synchronize];
+    
+    totalNS4 = [NSNumber numberWithFloat:total4];
+    correctNS4 = [NSNumber numberWithFloat:correct4];
+    percentNS4 = [NSNumber numberWithFloat:percentTotal4];
+    [defaults setObject:totalNS4 forKey:@"TN-total4"];
+    [defaults setObject:correctNS4 forKey:@"TN-correct4"];
+    [defaults setObject:percentNS4 forKey:@"TN-percent4"];
+    [defaults synchronize];
+    
+    totalNS5 = [NSNumber numberWithFloat:total5];
+    correctNS5 = [NSNumber numberWithFloat:correct5];
+    percentNS2 = [NSNumber numberWithFloat:percentTotal5];
+    [defaults setObject:totalNS5 forKey:@"TN-total5"];
+    [defaults setObject:correctNS5 forKey:@"TN-correct5"];
+    [defaults setObject:percentNS5 forKey:@"TN-percent5"];
+    [defaults synchronize];
+}
+
+
 
 -(void) swipeUp
 {
     total = 0;
     correct = 0;
     percentTotal = 0;
-    _correct.string = [NSString stringWithFormat:@"%.0f", correct];
-    _correct.visible = true;
-    _total.string = [NSString stringWithFormat:@"%.0f", total];
-    _total.visible = true;
-    percentTotal = (int)((correct / total) * 100);
-    _percent.string = [NSString stringWithFormat:@"Success Rate: %.0f %%", percentTotal];
+    
     
     total2 = 0;
     correct2 = 0;
     percentTotal2 = 0;
-    _correct2.string = [NSString stringWithFormat:@"%.0f", correct2];
-    _correct2.visible = true;
-    _total2.string = [NSString stringWithFormat:@"%.0f", total2];
-    _total2.visible = true;
-    percentTotal2 = (int)((correct2 / total2) * 100);
-    _percent2.string = [NSString stringWithFormat:@"Success Rate: %.0f %%", percentTotal2];
+    
     
     
     total3 = 0;
     correct3 = 0;
     percentTotal3 = 0;
-    _correct3.string = [NSString stringWithFormat:@"%.0f", correct3];
-    _correct3.visible = true;
-    _total3.string = [NSString stringWithFormat:@"%.0f", total3];
-    _total3.visible = true;
-    percentTotal3 = (int)((correct3 / total3) * 100);
-    _percent3.string = [NSString stringWithFormat:@"Success Rate: %.0f %%", percentTotal3];
+    
     
     total4 = 0;
     correct4 = 0;
     percentTotal4 = 0;
-    _correct4.string = [NSString stringWithFormat:@"%.0f", correct4];
-    _correct4.visible = true;
-    _total4.string = [NSString stringWithFormat:@"%.0f", total4];
-    _total4.visible = true;
-    percentTotal4 = (int)((correct4 / total4) * 100);
-    _percent4.string = [NSString stringWithFormat:@"Success Rate: %.0f %%", percentTotal4];
+    
     
     total5 = 0;
     correct5 = 0;
     percentTotal5 = 0;
-    _correct5.string = [NSString stringWithFormat:@"%.0f", correct5];
-    _correct5.visible = true;
-    _total5.string = [NSString stringWithFormat:@"%.0f", total5];
-    _total5.visible = true;
-    percentTotal5 = (int)((correct5 / total5) * 100);
-    _percent5.string = [NSString stringWithFormat:@"Success Rate: %.0f %%", percentTotal5];
+    
+    [self showValues];
+    [self saveValues];
     
     
 }
@@ -133,126 +259,113 @@
 //Code for the single leg
 
 -(void)no {
-    total++;
-    _correct.string = [NSString stringWithFormat:@"%.0f", correct];
-    _correct.visible = true;
-    _total.string = [NSString stringWithFormat:@"%.0f", total];
-    _total.visible = true;
-    percentTotal = (int)((correct / total) * 100);
-    _percent.string = [NSString stringWithFormat:@"Success Rate: %.0f %%", percentTotal];
     
+    
+    total++;
+    percentTotal = (int)((correct / total) * 100);
+    
+    [self showValues];
+    [self saveValues];
 }
 
 -(void)yes {
     total++;
     correct++;
-    _total.string = [NSString stringWithFormat:@"%.0f", total];
-    _total.visible = true;
-    _correct.string = [NSString stringWithFormat:@"%.0f", correct];
-    _correct.visible = true;
-    percentTotal = (int)((correct / total) * 100);
-    _percent.string = [NSString stringWithFormat:@"Success Rate: %.0f %%", percentTotal];
     
+    percentTotal = (int)((correct / total) * 100);
+    [self showValues];
+    [self saveValues];
 }
 
 //Code for the double leg
 
 -(void)no2 {
     total2++;
-    _correct2.string = [NSString stringWithFormat:@"%.0f", correct2];
-    _correct2.visible = true;
-    _total2.string = [NSString stringWithFormat:@"%.0f", total2];
-    _total2.visible = true;
     percentTotal2 = (int)((correct2 / total2) * 100);
-    _percent2.string = [NSString stringWithFormat:@"Success Rate: %.0f %%", percentTotal2];
     
+    [self showValues];
+    [self saveValues];
 }
 
 -(void)yes2 {
     total2++;
     correct2++;
-    _total2.string = [NSString stringWithFormat:@"%.0f", total2];
-    _total2.visible = true;
-    _correct2.string = [NSString stringWithFormat:@"%.0f", correct2];
-    _correct2.visible = true;
     percentTotal2 = (int)((correct2 / total2) * 100);
-    _percent2.string = [NSString stringWithFormat:@"Success Rate: %.0f %%", percentTotal2];
     
+    [self showValues];
+    [self saveValues];
 }
 
 //Code for the High C
 
 -(void)no3 {
     total3++;
-    _correct3.string = [NSString stringWithFormat:@"%.0f", correct3];
-    _correct3.visible = true;
-    _total3.string = [NSString stringWithFormat:@"%.0f", total3];
-    _total3.visible = true;
-    percentTotal3 = (int)((correct3 / total3) * 100);
-    _percent3.string = [NSString stringWithFormat:@"Success Rate: %.0f %%", percentTotal3];
     
+    percentTotal3 = (int)((correct3 / total3) * 100);
+    
+    [self showValues];
+    [self saveValues];
 }
 
 -(void)yes3 {
     total3++;
     correct3++;
-    _total3.string = [NSString stringWithFormat:@"%.0f", total3];
-    _total3.visible = true;
-    _correct3.string = [NSString stringWithFormat:@"%.0f", correct3];
-    _correct3.visible = true;
-    percentTotal3 = (int)((correct3 / total3) * 100);
-    _percent3.string = [NSString stringWithFormat:@"Success Rate: %.0f %%", percentTotal3];
     
+    percentTotal3 = (int)((correct3 / total3) * 100);
+    
+    [self showValues];
+    [self saveValues];
 }
 
 //Code for the short offense
 
 -(void)no4 {
     total4++;
-    _correct4.string = [NSString stringWithFormat:@"%.0f", correct4];
-    _correct4.visible = true;
-    _total4.string = [NSString stringWithFormat:@"%.0f", total4];
-    _total4.visible = true;
-    percentTotal4 = (int)((correct4 / total4) * 100);
-    _percent4.string = [NSString stringWithFormat:@"Success Rate: %.0f %%", percentTotal4];
     
+    percentTotal4 = (int)((correct4 / total4) * 100);
+    
+    [self showValues];
+    [self saveValues];
 }
 
 -(void)yes4 {
     total4++;
     correct4++;
-    _total4.string = [NSString stringWithFormat:@"%.0f", total4];
-    _total4.visible = true;
-    _correct4.string = [NSString stringWithFormat:@"%.0f", correct4];
-    _correct4.visible = true;
-    percentTotal4 = (int)((correct4 / total4) * 100);
-    _percent4.string = [NSString stringWithFormat:@"Success Rate: %.0f %%", percentTotal4];
     
+    percentTotal4 = (int)((correct4 / total4) * 100);
+    
+    [self showValues];
+    [self saveValues];
 }
 
 //Code for the shot/reshot
 
 -(void)no5 {
     total5++;
-    _correct5.string = [NSString stringWithFormat:@"%.0f", correct5];
-    _correct5.visible = true;
-    _total5.string = [NSString stringWithFormat:@"%.0f", total5];
-    _total5.visible = true;
-    percentTotal5 = (int)((correct5 / total5) * 100);
-    _percent5.string = [NSString stringWithFormat:@"Success Rate: %.0f %%", percentTotal5];
     
+    percentTotal5 = (int)((correct5 / total5) * 100);
+    
+    [self showValues];
+    [self saveValues];
 }
 
 -(void)yes5 {
     total5++;
     correct5++;
-    _total5.string = [NSString stringWithFormat:@"%.0f", total5];
-    _total5.visible = true;
-    _correct5.string = [NSString stringWithFormat:@"%.0f", correct5];
-    _correct5.visible = true;
-    percentTotal5 = (int)((correct5 / total5) * 100);
-    _percent5.string = [NSString stringWithFormat:@"Success Rate: %.0f %%", percentTotal5];
     
+    percentTotal5 = (int)((correct5 / total5) * 100);
+    
+    [self showValues];
+    [self saveValues];
 }
+
+
+
+
+
+
+
+
+
 
 @end
